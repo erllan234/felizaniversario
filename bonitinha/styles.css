@@ -1,0 +1,272 @@
+body{
+    background: linear-gradient(rgb(194, 97, 113),rgb(66, 23, 30));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-image: url(wallpaper.png);
+    background-size: cover;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 23REM;
+    position: relative;
+  
+    
+}
+.fotos img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;    
+}
+/*.player{
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    position: absolute;
+    top: 1%;
+    
+
+    }
+.card{
+    background: linear-gradient(rgb(185, 6, 6),rgb(66, 0, 0));
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.text h2{
+    font-size: 120%;
+    margin: 0;
+    
+}
+.text p{
+    font-size:80% ;
+    margin-top: 1%;
+    font-weight: 500;
+    color: gray;
+    margin: 0;
+}
+.play-icon{
+    position: absolute;
+    left: 71%;
+    bottom: 0.5rem;
+    
+    
+}
+.play-icon .circle:hover{
+    animation: buttom 0.5s forwards;
+}
+@keyframes buttom{
+    0%{transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+
+}
+.circle{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: grid;
+    place-items: center;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 19px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.3rem;
+}
+*/
+.player {
+   width: 15rem;
+   height: 15rem;
+    background: linear-gradient(rgb(148, 4, 4),rgb(37, 1, 1));
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    box-sizing:border-box;
+    position: relative;
+    top:-5%;
+    
+   
+   
+}
+
+.cover {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.song-title {
+    color: white;
+    
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.artist {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
+}
+
+.play-btn {
+    width: 35px;
+    height: 35px;
+    background: #1DB954;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-btn:hover {
+    background: #1ed760;
+}
+
+.play-btn i {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+canvas {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    margin-top: 15px;
+}
+
+.hearts img {
+    position: absolute;
+    width: 2rem;
+    height: 5%;
+    z-index: 1;
+    opacity: 0.5;
+    
+}
+.heart1{
+    position: relative;
+    left: 40%;
+    bottom: 40%;
+    animation: hearts 3s alternate infinite ease-in-out;
+    
+}
+.heart2{
+    position: relative;
+    left: 60%;
+    bottom: 60%;
+    animation: hearts 3.1s alternate infinite ease-in-out;
+}
+.heart3{
+    position: relative;
+    left: 60%;
+    bottom: 2%;
+    animation: hearts 3.2s alternate infinite ease-in-out;
+    
+}
+.heart4{
+    position: relative;
+    right: 60%;
+    TOP: 20%;
+    animation: hearts 3.3s alternate infinite ease-in-out;
+    
+}
+.heart5{
+    position: absolute;
+    left: 60%;
+    bottom: 20%;
+    animation: hearts 3.5s alternate infinite ease-in-out;
+    
+}
+.heart6{
+    position: absolute;
+    right: 40%;
+    bottom: 40%;
+    animation: hearts 3.4s alternate infinite ease-in-out;
+    
+}
+.heart7{
+    position: relative;
+    left: 36%;
+    bottom: 20%;
+    animation: hearts 3.3s alternate infinite ease-in-out;
+    
+}
+.heart8{
+    position: relative;
+    left: 40%;
+    bottom: 60%;
+    animation: hearts 3.2s alternate infinite ease-in-out;
+    
+}
+.heart9{
+    position: relative;
+    left: 60%;
+    bottom: 20%;
+    animation: hearts 3.1s alternate infinite ease-in-out;
+    
+}
+.heart10{
+    position: relative;
+    left: 40%;
+    bottom: 10%;
+    animation: hearts 3s alternate infinite ease-in-out;
+    
+}
+@keyframes hearts{
+
+        0%{
+            transform: translate(0px, 80px);
+            transform: translateX(0px,20px);
+            opacity: 1;
+            
+        }
+        100%{
+            transform: translate(10px, -30px);
+            transform: translateX(10px, -70px);
+            animation-timing-function: ease-in-out ;
+            opacity: 1;
+        }
+        
+     }
+
+
+
+
+     
+
